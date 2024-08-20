@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Break Ministry, Inc.</title>
+  <!-- CSS Bootstrap and Local -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- Font API -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- D3 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TP1LSB8Z83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TP1LSB8Z83');
+  </script>
+</head>
+
+<body class="lightswitch">
+  <!-- Navbar Begins Here -->
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbarfonts">
+    <a class="navbar-brand" href="index.html">
+      <img id="breaklogo" src="Screenshot 2024-08-02 015730.png" alt="Lively Light Ministry">
+    </a>
+    <img id="lightimage" src="static/images/switch.png" alt="dark mode" onclick="colorSwitch()">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto" id="navbarfonts">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="media.html">Media</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="media.html">Community Resources</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar Ends Here -->
+
+  <!-- Banner -->
+  <div id="banner">
+    <p id="announcetext">Get in touch with us!</p>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section class="container" id="contact-form">
+    <div class="row justify-content-around">
+      <div class="col-10">
+        <span class="headertext">Contact Us</span>
+        <form action="https://formspree.io/YOUREMAIL" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Begins Here -->
+  <footer id="footer" class="bg-light">
+    <a class="navbar-brand" href="index.html"><img id="breaklogo2" style="padding-top:50px;"
+        src="static/images/Logo and one line.png" alt="Break Ministry" width="200px"></a>
+    <br>
+    Email: <a href='mailto:livelylightministry@gmail.com'>livelylightministry@gmail.com</a>
+    <br>
+    <a class="navbar-brand" href="https://www.facebook.com/breakministry"><img src="static/images/Facebook.png"
+        alt="Break's Facebook" width="30px"></a>
+    <a class="navbar-brand" href="https://www.instagram.com/breakministry"><img src="static/images/Insta.png"
+        alt="Break's Insta" width="30px"></a>
+    <a class="navbar-brand" href="https://www.youtube.com/channel/UCr5m-h4cPq2_lqvrQIplOww"><img
+        src="static/images/YouTube.png" alt="Break's YouTube" width="30px"></a>
+    <br><br>
+    <p>
+      "As a body is one though it has many parts, and all the parts of the body,
+      though many, are one body, so also Christ. For in one Spirit we were all baptized into one body,
+      whether Jews or Greeks, slaves or free persons, and we were all given to drink of one Spirit." <br>
+      - 1 Corinthians 12:12-13
+    </p>
+    <br><br>
+  </footer>
+  <!-- Footer Ends Here -->
+
+  <!-- JS for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="static/js/index.js"></script>
+  <script src="static/js/darkmode.js"></script>
+</body>
+
+</html>
